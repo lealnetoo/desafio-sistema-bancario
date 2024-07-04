@@ -71,9 +71,9 @@ def filtrar_usuario(cpf, usuarios):
 
 def listar_contas(contas):
     for conta in contas:
-        linha = f"""\
+        linha = f"""\n
             Agência:\t{conta['agencia']}
-            C/C:\t\t{conta['numero_conta']}
+            C/C:\t{conta['numero_conta']}
             Titular:\t{conta['usuario']['nome']}
         """
     print("=" * 100)
